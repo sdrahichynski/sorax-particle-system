@@ -187,5 +187,11 @@ test.addObject ParticleSystem, {
 	scatter: 0.4
 }, on
 
+test.addObject ParticleSystem, {
+	loc: new Vec2 200, 400
+	particleSize: 6
+	particleLife: 80
+	scatter: 1.6
+}, on
 
 do test.start
