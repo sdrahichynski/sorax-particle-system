@@ -82,7 +82,6 @@ class World
 		do object.draw for object in @objects
 
 
-
 ################################
 ##########   Vec2
 ################################
