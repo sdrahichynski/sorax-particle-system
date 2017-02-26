@@ -1,0 +1,112 @@
+/***** nav *****/
+.main-header {
+	height: calc(100vh + 1px);
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .25em 0;
+
+	&-wrapper {
+		background-color: #fff;
+		box-shadow: 0 0 2px rgba(0,0,0,.3);
+		position: fixed;
+		z-index: 10;
+		width: 100%;
+	}
+
+	.logo {
+		img {
+			font-size: 1.5rem;
+			height: 5rem;
+		}
+	}
+
+	.spacer {
+		flex: 1 0 auto;
+	}
+
+	ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		position: relative;
+		display: flex;
+		flex: 1 0 auto;
+		border-left: 1px solid #aaa;
+		border-right: 1px solid #aaa;
+		margin-right: -1px;
+
+		&:hover {
+			border-color: $main-color;
+			z-index: 1;
+		}
+
+		&.active {
+			border-color: $main-color;
+			background-color: $main-color;
+			border-radius: 2px;
+			z-index:2;
+			a {
+				color: #fff;
+			}
+		}
+
+		&:first-child {
+			border-left: none;
+			padding-left: 1px;
+		}
+		&:last-child {
+			border-right: none;
+			padding-right: 1px;
+		}
+	}
+
+	a {
+		padding: .5em 1em;
+		color: #555;
+		font-weight: 600;
+		height: 100%;
+
+		&:hover {
+			color: $main-color;
+			text-decoration: none;
+		}
+
+		&:focus {
+			text-decoration: none;
+		}
+	}
+}
+
+.first-screen {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background: url(http://venturedayminsk.com/wp-content/themes/ventureday/assets/images/vdm-2017.jpg) no-repeat 50% 0,
+							linear-gradient(to bottom, #160839 0%, #160839 30%,#040207);
+	background-size: contain;
+	color: #fff;
+	font-size: 1rem;
+
+
+	p {
+		font-size: 2.5em;
+		font-weight: 500;
+		margin-bottom: 2em;
+	}
+
+	.button {
+		font-size: 2.5em;
+		background-color: #fff;
+		color: $main-color;
+	}
+}

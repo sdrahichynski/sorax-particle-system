@@ -1,0 +1,52 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+}
+
+.button {
+	display: block;
+	padding: .5em 1em;
+	border-radius: 2px;
+}
+
+h1 {
+	margin: .2em 0;
+	padding: 0 .2em;
+	text-align: center;
+	font-size: 4.5em;
+	font-weight: 600;
+	text-shadow: 0 0 2px rgba(0,0,0,.3);
+}
+
+h2 {
+	margin-top: 0;
+	font-size: 4rem;
+	text-align: center;
+}
+
+h3 {
+	font-size: 2.6rem;
+	text-align: center;
+}
+.headings {
+	margin-bottom: 4em;
+}
+
+section {
+	position: relative;
+	padding: 4rem 0;
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 60%;
+		left: 20%;
+		bottom: 0;
+		height: 1px;
+		background: radial-gradient(#555, transparent);
+	}
+}
